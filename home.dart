@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:csi/widgets/todo.dart';
-import 'package:csi/class_todo.dart';
+import 'package:projectaro/todo.dart';
+import 'package:projectaro/class_todo.dart';
 
 class Home extends StatefulWidget {
   Home({Key? key, required this.tasks}) : super(key: key);
@@ -80,24 +80,24 @@ class _HomeState extends State<Home> {
             color: Colors.white,
             child: Column(
               children: [
-            Container(
-            padding: EdgeInsets.symmetric(horizontal: 15),
-      decoration: BoxDecoration(
-        color: Colors.grey,
-        borderRadius: BorderRadius.circular(20),
-      ),
-      child: TextField(
-        onChanged: (value) => search(value),  // Call search on text change
-        decoration: InputDecoration(
-          contentPadding: EdgeInsets.all(0),
-          prefixIcon: Icon(Icons.search, color: Colors.white),
-          prefixIconConstraints: BoxConstraints(maxHeight: 20, minWidth: 25),
-          border: InputBorder.none,
-          hintText: 'Search',
-          hintStyle: TextStyle(color: Colors.white),
-        ),
-      ),
-    ),
+                Container(
+                  padding: EdgeInsets.symmetric(horizontal: 15),
+                  decoration: BoxDecoration(
+                    color: Colors.grey,
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  child: TextField(
+                    onChanged: (value) => search(value),  // Call search on text change
+                    decoration: InputDecoration(
+                      contentPadding: EdgeInsets.all(0),
+                      prefixIcon: Icon(Icons.search, color: Colors.white),
+                      prefixIconConstraints: BoxConstraints(maxHeight: 20, minWidth: 25),
+                      border: InputBorder.none,
+                      hintText: 'Search',
+                      hintStyle: TextStyle(color: Colors.white),
+                    ),
+                  ),
+                ),
                 Expanded(
                   child: ListView(
                     children: [
@@ -198,5 +198,3 @@ Widget titleBar() {
     ],
   );
 }
-
-
