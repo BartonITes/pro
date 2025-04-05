@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:csi/class_todo.dart';
+import 'package:projectaro/class_todo.dart';
 
 class Todo extends StatelessWidget {
   final cltodo tasks;
