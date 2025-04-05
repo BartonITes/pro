@@ -3,11 +3,11 @@ class cltodo{
   String? todoitem;
   bool? done;
   cltodo(
-  {
-    required this.id,
-    required this.todoitem,
-    this.done= false
-}
+      {
+        required this.id,
+        required this.todoitem,
+        this.done= false
+      }
       );
   static List<cltodo> todolist(){
     return[
