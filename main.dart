@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:csi/home.dart';
+import 'package:projectaro/home.dart';
 import 'package:flutter/services.dart';
-import 'package:csi/class_todo.dart';  // Import the cltodo class
+import 'package:projectaro/class_todo.dart';  // Import the cltodo class
 
 void main() {
   runApp(const MyApp());
